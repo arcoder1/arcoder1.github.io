@@ -66,7 +66,7 @@ header {
 
 nav {
     text-align: center;
-    width: 90%;
+    width: 100%;
     float: right;
     margin-bottom: 25px;
 
@@ -84,10 +84,9 @@ section {
     width: 33%;
     padding: 5px;
     display: inline-block;
-    border: 1px solid #000;
     flex: 1;
     margin: 0 auto;
-    height: 300px;
+    height: auto;
 }
 
 .homesection h2 {
@@ -109,48 +108,14 @@ figcaption {
 
 
 
-
-
 .wrapper {
     display: block;
 }
 
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* top layer */
-    z-index: 9999;
+.homesection figure img {
+    width: 100%;
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    /* full screen */
-    width: 100vw;
-    height: 100vh;
-    /* transparent black */
-    background: rgba(0, 0, 0, 0.7);
-    /* middle layer, i.e. appears below the sidebar */
-    z-index: 998;
-    opacity: 0;
-    /* animate the transition */
-    transition: all 0.5s ease-in-out;
-}
-/* display .overlay when it has the .active class */
-.overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-#dismiss {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    /* top right corner of the sidebar */
-    top: 10px;
-    right: 10px;
+.homesection figure figcaption a {
+    text-decoration: unset;
 }
