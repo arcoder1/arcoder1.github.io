@@ -113,9 +113,13 @@ figcaption {
 }
 
 .homesection figure img {
-    width: 100%;
+    width: 100% !important;
 }
 
 .homesection figure figcaption a {
     text-decoration: unset;
+}
+
+.clear {
+    clear: both;
 }
